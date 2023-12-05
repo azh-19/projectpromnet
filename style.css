@@ -23,6 +23,10 @@ section {
     padding: 2rem 9%;
 }
 
+section:nth-child(even) {
+    background: #eee;
+}
+
 .heading {
     text-align: center;
     font-size: 4rem;
@@ -93,36 +97,44 @@ header .icons a:hover {
     color: var(--pink);
 }
 
-.home {
+.home .home-slider .slide {
     display: flex;
     align-items: center;
-    min-height: 100vh;
-    background-image:url("images/home-bg.jpg");
-    background-size: cover;
-    background-position: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
 }
 
-.home .content {
-    max-width: 50rem;
+.home .home-slider .slide .content {
+    flex: 1 1 45rem;
 }
 
-.home .content h3 {
-    font-size: 6rem;
+.home .home-slider .slide .content .image {
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .content .image img{
+    width: 100%;
+}
+
+.home .home-slider .slide .content span {
+    color: var(--pink);
+    font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content h3{
     color: #333;
+    font-size: 5rem;
 }
 
-.home .content span{
-    font-size: 3.5rem;
-    color:var(--pink);
-    padding: 1rem 0;
-    line-height: 1.5;
-}
-
-.home .content p {
+.home .home-slider .slide .content p {
+    color: #333;
     font-size: 1.5rem;
-    color:#999;
-    padding: 1rem 0;
-    line-height: 1.5;
+    padding: .5rem 0;
+}
+
+.swipper-pagination-bullet-active {
+    background: var(--pink);
 }
 
 .about .row {
@@ -373,5 +385,3 @@ header .icons a:hover {
 .footer .credit span {
     color: var(--pink);
 }
-
-

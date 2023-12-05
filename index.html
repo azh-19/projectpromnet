@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scaled=1.0">
     <title>De beauté</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -32,13 +33,45 @@
 
     <section class="home" id="home">
 
-        <div class="content">
-            <h3>Feel the Beuty</h3>
-            <span> natural & beautiful </span>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Debitis distinctio odit fuga tenetur ipsa numquam quas.</p>
+    <div class="swipper-container home-slider">
+        <div class="swiper-wrapper wrapper">
+        
+            <div class="swiper-slide slide">
+            <div class="content">
+            <h3>Barenbliss</h3>
+            <span> Feel the Beuty </span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="image">
+            <img src="images/lipstick.png" alt="">
+            </div>
+            </div>
+
+            <div class="swiper-slide slide">
+            <div class="content">
+            <h3>Amuse</h3>
+            <span> Feel the Beuty </span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="image">
+            <img src="images/lipstick.png" alt="">
+            </div>
+            </div>
+
+            <div class="swiper-slide slide">
+            <div class="content">
+            <h3>Kyle</h3>
+            <span> Feel the Beuty</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="image">
+            <img src="images/lipstick.png" alt="">
+            </div>
         </div>
 
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
     </section>
 
     <section class="about" id="about">
@@ -290,7 +323,9 @@
 
     </section>
 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
-
